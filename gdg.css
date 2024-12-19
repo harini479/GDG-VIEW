@@ -110,55 +110,63 @@ margin:8px;
 }
 /* Custom Navbar */
 /* Custom Navbar */
+/* Custom Navbar */
 .custom-navbar {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space out items */
+    padding: 10px 20px; /* Add padding */
     background-color: #f7f7f7; /* Light grey background */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
 }
 
 .custom-navbar .navbar-brand {
-    font-weight: 25;
-    font-size: 0.8rem;
-     /* Darker text for contrast */
-    margin-left:-50px;
-    margin-top:30px;
+    font-weight: 600;
+    font-size: 1.2rem; /* Adjust size for better visibility */
+    margin: 0; /* Remove any default margins */
 }
 
 .custom-navbar .navbar-logo {
-    height: 30px; /* Logo height */
+    height: 40px; /* Adjust logo height */
     width: auto;
-    background-color: transparent; /* Ensure no white background on logo */
-    border-radius: 15; /* Remove any unwanted borders */
+}
+
+.custom-navbar .nav-links {
+    display: flex;
+    align-items: center; /* Vertically align links */
+    gap: 20px; /* Add space between links */
 }
 
 .custom-navbar .nav-link {
     color: #555555; /* Grey text color */
-    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
     transition: color 0.3s;
 }
-.custom-navbar .l
-{
- font-weight: 500px;
-    font-size: 1.4rem;
-}
 
-.custom-navbar .l1
-{
-margin-top:20px;
- font-weight: 500;
-    font-size: 1.0rem;
-color: black;
-}
 .custom-navbar .nav-link:hover {
     color: #f39c12; /* Golden orange hover effect */
 }
 
+.custom-navbar .btn {
+    padding: 8px 15px; /* Add padding for buttons */
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 .custom-navbar .btn-outline-dark {
-    border-color: #555555;
+    border: 1px solid #555555;
     color: #555555;
     transition: background-color 0.3s, color 0.3s;
-margin:100px;
 }
+
+.custom-navbar .btn-outline-dark:hover {
+    background-color: #555555;
+    color: #ffffff;
+}
+
 
 .custom-navbar .btn-outline-dark:hover {
     background-color: #555555;
