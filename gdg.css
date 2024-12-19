@@ -209,11 +209,9 @@ header h1 {
 
 header h2 {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px; /* Decreased size */
     color: #555;
-    display: inline-block;
-    align-self: center;
-    padding-left: 10px;
+    font-weight: normal; /* Adjust font weight if needed */
 }
 @media (max-width: 768px) {
     .home-section .content h1 {
@@ -764,11 +762,9 @@ header h1 {
 
 header h2 {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px; /* Decreased size */
     color: #555;
-    display: inline-block;
-    align-self: center;
-    padding-left: 10px;
+    font-weight: normal; /* Adjust font weight if needed */
 }
 
 #l
