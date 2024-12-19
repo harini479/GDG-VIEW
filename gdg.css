@@ -184,6 +184,11 @@ margin:10px;
     color: #ffff;
 margin:100px;
 }
+.l1
+{
+    margin-left:10px;
+    font-size=0.1rem;
+}
 
 @media (max-width: 768px) {
     .home-section .content h1 {
