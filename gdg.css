@@ -187,7 +187,8 @@ margin:100px;
 .l1
 {
     margin-left:10px;
-    font-size=0.1rem;
+    margin-bottom:10px;
+    font-size=10px;
 }
 
 @media (max-width: 768px) {
