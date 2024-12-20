@@ -594,9 +594,12 @@ margin:8px;
         flex-direction: column;
         align-items: center;
     }
-#l
+.l
 {
 margin-left:-1px;
+        font-weight: 600;
+    font-size: 1.2rem; /* Adjust size for better visibility */
+    margin: 0; /* Remove any default margins */
 }
 .navbar-brand
 {
