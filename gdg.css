@@ -665,7 +665,6 @@ margin:8px;
     height: 30px; /* Adjust logo height */
     width: auto;
     background-color: transparent; /* Ensure no white background on logo */
-    border-radius: 15;
 }
 
 .custom-navbar .nav-links {
