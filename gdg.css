@@ -110,63 +110,55 @@ margin:8px;
 }
 /* Custom Navbar */
 /* Custom Navbar */
-/* Custom Navbar */
 .custom-navbar {
-    display: flex;
-    align-items: center; /* Vertically align items */
-    justify-content: space-between; /* Space out items */
-    padding: 10px 20px; /* Add padding */
     background-color: #f7f7f7; /* Light grey background */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
 }
 
 .custom-navbar .navbar-brand {
-    font-weight: 600;
-    font-size: 1.2rem; /* Adjust size for better visibility */
-    margin: 0; /* Remove any default margins */
+    font-weight: 25;
+    font-size: 0.8rem;
+     /* Darker text for contrast */
+    margin-left:-50px;
+    margin-top:30px;
 }
 
 .custom-navbar .navbar-logo {
-    height: 40px; /* Adjust logo height */
+    height: 30px; /* Logo height */
     width: auto;
-}
-
-.custom-navbar .nav-links {
-    display: flex;
-    align-items: center; /* Vertically align links */
-    gap: 20px; /* Add space between links */
+    background-color: transparent; /* Ensure no white background on logo */
+    border-radius: 15; /* Remove any unwanted borders */
 }
 
 .custom-navbar .nav-link {
     color: #555555; /* Grey text color */
-    font-size: 1rem;
-    text-decoration: none;
+    font-weight: 400;
     transition: color 0.3s;
 }
+.custom-navbar #l
+{
+ font-weight: 500px;
+    font-size: 1.4rem;
+}
 
+.custom-navbar .l1
+{
+margin-top:20px;
+ font-weight: 500;
+    font-size: 1.0rem;
+color: black;
+}
 .custom-navbar .nav-link:hover {
     color: #f39c12; /* Golden orange hover effect */
 }
 
-.custom-navbar .btn {
-    padding: 8px 15px; /* Add padding for buttons */
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
 .custom-navbar .btn-outline-dark {
-    border: 1px solid #555555;
+    border-color: #555555;
     color: #555555;
     transition: background-color 0.3s, color 0.3s;
+margin:100px;
 }
-
-.custom-navbar .btn-outline-dark:hover {
-    background-color: #555555;
-    color: #ffffff;
-}
-
 
 .custom-navbar .btn-outline-dark:hover {
     background-color: #555555;
@@ -184,13 +176,6 @@ margin:10px;
     color: #ffff;
 margin:100px;
 }
-.l1
-{
-    margin-left:100px;
-    margin-bottom:50px;
-    font-size=10px;
-}
-
 @media (max-width: 768px) {
     .home-section .content h1 {
         font-size: 2rem;
@@ -594,130 +579,6 @@ margin:8px;
         flex-direction: column;
         align-items: center;
     }
-.l
-{
-margin-left:-1px;
-        font-weight: 600;
-    font-size: 1.2rem; /* Adjust size for better visibility */
-    margin: 0; /* Remove any default margins */
-}
-.navbar-brand
-{
-margin-right:285px;
-}
-    .navbar-logo {
-        font-size: 2rem;
-    }
-    .navbar-heading {
-        font-size: 1.2rem;
-    }
-
-.nav-links {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    .nav-link {
-        font-size: 1.2rem;
-        margin: 5px 0;
-    }
-}
-@media only screen and (max-width: 360px) {
-    /* Adjust layout for smaller screens */
-    .custom-navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .navbar-brand {
-        font-size: 0.5rem;
-        margin-bottom: 3px;
-    }
-
-    .navbar-heading {
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-
-    #team {
-        flex-direction: column;
-    }
-
-    .our-team {
-        width: 100%;
-        height: auto;
-          overflow-y: auto; /* Allows vertical scrolling */
-  overflow-x: hidden;
-    }
-#team {
-  background-color: #f9f9f9; /* Light background color for team section */
-  padding: 50px 0;
- /* No color fill */
-padding:1px;
-height:410px;
-width:95%;
-margin:8px;
-  overflow-y: auto; /* Allows vertical scrolling */
-  overflow-x: hidden;
- background-color: #f0f8ff;
-
-}
-/* Custom Navbar */
-.custom-navbar {
-    display: flex;
-    align-items: center; /* Vertically align items */
-    justify-content: space-between; /* Space out items */
-    padding: 10px 20px; /* Add padding */
-    background-color: #f7f7f7; /* Light grey background */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
-}
-
-.custom-navbar .navbar-brand {
-    font-weight: 600;
-    font-size: 1.2rem; /* Adjust size for better visibility */
-    margin: 0; /* Remove any default margins */
-}
-
-.custom-navbar .navbar-logo {
-    height: 40px; /* Adjust logo height */
-    width: auto;
-}
-
-.custom-navbar .nav-links {
-    display: flex;
-    align-items: center; /* Vertically align links */
-    gap: 20px; /* Add space between links */
-}
-
-.custom-navbar .nav-link {
-    color: #555555; /* Grey text color */
-    font-size: 1rem;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.custom-navbar .nav-link:hover {
-    color: #f39c12; /* Golden orange hover effect */
-}
-
-.custom-navbar .btn {
-    padding: 8px 15px; /* Add padding for buttons */
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.custom-navbar .btn-outline-dark {
-    border: 1px solid #555555;
-    color: #555555;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.custom-navbar .btn-outline-dark:hover {
-    background-color: #555555;
-    color: #ffffff;
-}
 #l
 {
 margin-left:-1px;
