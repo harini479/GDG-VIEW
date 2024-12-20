@@ -116,7 +116,7 @@ margin:8px;
     border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
 }
 
-.custom-navbar .navbar-brand {
+.custom-navbar #navbar-brand {
     font-weight: 25;
     font-size: 0.8rem;
      /* Darker text for contrast */
