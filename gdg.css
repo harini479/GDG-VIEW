@@ -136,7 +136,7 @@ margin:8px;
     font-weight: 400;
     transition: color 0.3s;
 }
-.custom-navbar #l
+.custom-navbar .l
 {
  font-weight: 500px;
     font-size: 1.4rem;
@@ -579,7 +579,7 @@ margin:8px;
         flex-direction: column;
         align-items: center;
     }
-#l
+.custom-navbar .l
 {
 margin-left:-1px;
 }
