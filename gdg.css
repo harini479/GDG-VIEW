@@ -662,7 +662,7 @@ margin:8px;
 }
 
 .custom-navbar .navbar-logo {
-    height:40px; /* Adjust logo height */
+    height:32px; /* Adjust logo height */
     width: auto;
     background-color: transparent; /* Ensure no white background on logo */
 }
@@ -704,11 +704,13 @@ margin:8px;
 #l
 {
 margin-left:-1px;
+font-size:8px
 }
 .navbar-brand
 {
 margin-right:200px;
 margin-top:10px;
+font-size:6px;
 }
  
     .navbar-heading {
