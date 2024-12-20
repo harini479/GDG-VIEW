@@ -706,10 +706,17 @@ margin:8px;
 margin-left:-1px;
 font-size:8px
 }
+.custom-navbar .l1
+{
+margin-top:10px;
+ font-weight: 500;
+    font-size: 1.0rem;
+color: black;
+}
 .navbar-brand
 {
 margin-right:200px;
-margin-top:10px;
+margin-top:20px;
 font-size:6px;
 }
  
