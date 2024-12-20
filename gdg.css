@@ -662,7 +662,7 @@ margin:8px;
 }
 
 .custom-navbar .navbar-logo {
-    height: 30px; /* Adjust logo height */
+    height: 20px; /* Adjust logo height */
     width: auto;
     background-color: transparent; /* Ensure no white background on logo */
 }
@@ -710,7 +710,7 @@ margin-left:-1px;
 margin-right:200px;
 }
     .navbar-logo {
-        font-size: 2rem;
+        font-size: 0.5rem;
     }
     .navbar-heading {
         font-size: 1.2rem;
