@@ -389,51 +389,84 @@ margin-bottom: -10px;
   background-color: #0056b3;
 }
 /*team section*/
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .team-section {
-            text-align: center;
-            padding: 20px;
-        }
-        .team-section h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
+          body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .team-section {
+        padding: 20px;
+        text-align: left; /* Align all text to the left */
+    }
+
+    .team-section h1 {
+        font-size: 2em;
+        text-align: center; /* Center the title */
+        margin-bottom: 20px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: flex-start; /* Align profiles to the left */
+        flex-wrap: wrap; /* Allow wrapping for responsive design */
+        margin-bottom: 30px;
+    }
+
+    .profile {
+        margin: 15px;
+        text-align: center;
+        flex: 1 1 calc(33.33% - 30px); /* 3 profiles per row on larger screens */
+        max-width: calc(33.33% - 30px);
+    }
+
+    .profile img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .profile h3 {
+        margin: 10px 0 5px;
+        font-size: 1.2em;
+    }
+
+    .profile p {
+        margin: 5px 0;
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .profile a {
+        text-decoration: none;
+        color: #007BFF;
+        font-size: 0.9em;
+    }
+
+    /* Responsive Design for Mobile */
+    @media (max-width: 768px) {
         .row {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
+            flex-direction: column; /* Stack profiles vertically */
+            align-items: center; /* Center profiles on smaller screens */
         }
+
         .profile {
-            margin: 15px;
-            text-align: center;
+            flex: 1 1 100%; /* Full width for each profile */
+            max-width: 100%;
         }
+
         .profile img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 10px;
+            width: 100px; /* Smaller images for mobile */
+            height: 100px;
         }
-        .profile h3 {
-            margin: 10px 0 5px;
-            font-size: 1.2em;
+
+        .team-section h1 {
+            font-size: 1.5em; /* Adjust title size */
         }
-        .profile p {
-            margin: 5px 0;
-            font-size: 0.9em;
-            color: #555;
-        }
-        .profile a {
-            text-decoration: none;
-            color: #007BFF;
-            font-size: 0.9em;
-        }
+    }
 /*@media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
 }*/
