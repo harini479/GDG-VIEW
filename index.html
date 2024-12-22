@@ -1,48 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <title>GDG Custom</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="gdg.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-   <header>
-    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-        <div class="container">
-            <!-- Logo -->
-            
-                <img src="logo.jpeg" alt="GDG Logo" class="navbar-logo">
-                <par id="l">GDG</par>
-             <a class="navbar-brand" href="#home">On campus <par class="l1">VIEW</par>
-            </a>
-            <!-- Mobile Menu Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Menu Items -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
+  <header class="header">
+    <div class="header-left">
+      <img src="logo.png" alt="Logo" class="logo">
+      <div class="header-text">
+        <span class="gdg">GDG</span><br>
+        <span class="on-campus">on campus</span>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
+</body>
+</html>
 
   <section id="home" class="home-section">
     <div class="content">
