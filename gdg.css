@@ -1569,7 +1569,21 @@ img {
     margin-top:-10px;
     margin-left:100px;
 }
-        
+    #upcoming-events
+    {
+        overflow-x:auto;
+        overflow-y:hidden;
+        ::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+}
+        #past-events
+    {
+        overflow-x:auto;
+        overflow-y:hidden;
+        ::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 }
 
 @media (min-width: 992px) {
