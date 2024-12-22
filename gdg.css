@@ -1525,13 +1525,14 @@ font-weight:200;
         margin: 5px 0;
     }
 }
-    footer {
+  footer {
   background-color: #f9f9f9;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #ddd;
+  flex-wrap: wrap; /* Ensures content wraps properly on smaller screens */
 }
 
 .footer-container {
@@ -1550,11 +1551,14 @@ font-weight:200;
 .footer-right {
   display: flex;
   align-items: center;
+  text-align: right;
 }
 
 .footer-right img {
-  height: 24px;
+  height: 50px; /* Set a fixed height */
+  max-width: 100px; /* Prevent the image from being too wide */
   margin-right: 10px;
+  object-fit: contain; /* Maintain the aspect ratio */
 }
 
 .footer-right p {
