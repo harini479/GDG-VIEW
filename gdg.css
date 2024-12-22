@@ -1380,7 +1380,7 @@ margin-right:285px;
         margin: 5px 0;
     }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 414px) {
     /* Adjust layout for smaller screens */
     .custom-navbar {
         flex-direction: column;
