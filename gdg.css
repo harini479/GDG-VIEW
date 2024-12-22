@@ -445,6 +445,11 @@ margin-bottom: -10px;
         color: #007BFF;
         font-size: 0.9em;
     }
+.row-separator {
+    border-top: 2px solid #ccc;
+    width: 80%;
+    margin: 20px auto;
+}
 
     /* Responsive Design for Mobile */
     @media (max-width: 768px) {
