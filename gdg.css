@@ -405,7 +405,7 @@ margin-bottom: -10px;
         text-align: center; /* Center the title */
         margin-bottom: 20px;
     }
-    .team-section h3 {
+    .team-section .heading {
     text-align: left;
     margin-left: 20px; /* Move the heading to the right */
     font-weight: bold;
