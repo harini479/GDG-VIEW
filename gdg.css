@@ -1626,7 +1626,7 @@ img {
  font-weight: 500px;
     font-size: 1.4rem;
     margin-top:-10px;
-    margin-left:100px;
+    margin-left:-100px;
 }
     #upcoming-events
     {
