@@ -130,7 +130,7 @@ margin:8px;
 }
 
 .custom-navbar .navbar-logo {
-    background-image: url('C:\Users\HARSHINI\OneDrive\Desktop\gdg\gdg\logo1.jpeg'); /* Adjust the path based on your file structure */
+    background-image: url('logo2.jpg'); /* Adjust the path based on your file structure */
     background-size: contain;
     background-repeat: no-repeat;
     width: 150px; /* Adjust dimensions */
