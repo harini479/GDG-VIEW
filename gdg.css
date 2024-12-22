@@ -116,7 +116,7 @@ margin:8px;
 /* Custom Navbar */
 /* Custom Navbar */
 .custom-navbar {
-    background-color: #f7f7f7; /* Light grey background */
+    background-color: #FFFFFF; /* Replace with the desired color */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
 }
@@ -140,7 +140,7 @@ margin:8px;
 }
 
 .custom-navbar .nav-link {
-    color: #555555; /* Grey text color */
+    background-color: #FFFFFF; /* Replace with the desired color */
     font-weight: 400;
     transition: color 0.3s;
 }
