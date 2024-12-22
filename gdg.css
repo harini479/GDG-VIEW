@@ -133,7 +133,7 @@ margin:8px;
     background-image: url('logo2.jpg'); /* Adjust the path based on your file structure */
     background-size: contain;
     background-repeat: no-repeat;
-    width: 110px; /* Adjust dimensions */
+    width: 120px; /* Adjust dimensions */
     height: auto;
 }
 
