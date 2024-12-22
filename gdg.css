@@ -406,9 +406,10 @@ margin-bottom: -10px;
         margin-bottom: 20px;
     }
     .team-section h3 {
-         /* Center the title */
-        right: 140px;
-        font-size:1.0rem;
+    text-align: left;
+    margin-left: 20px; /* Move the heading to the right */
+    font-weight: bold;
+    font-size: 1.5em; /* Optional: Adjust font size for better visibility */
     }
     .row {
         display: flex;
