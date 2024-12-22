@@ -388,6 +388,31 @@ margin-bottom: -10px;
 .event-info button:hover {
   background-color: #0056b3;
 }
+#upcoming-events, #past-events {
+    white-space: nowrap; /* Ensure horizontal scrolling */
+    overflow-x: hidden; /* Hide horizontal scroll */
+    overflow-y: hidden; /* Prevent vertical scroll */
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; /* Center the content */
+    gap: 20px; /* Spacing between cards */
+}
+
+.event-card {
+    display: inline-block; /* Make sure cards stay inline */
+    scroll-snap-align: center; /* Optional for smooth snapping */
+}
+
+/* Hide scrollbar for all browsers */
+#upcoming-events::-webkit-scrollbar,
+#past-events::-webkit-scrollbar {
+    display: none;
+}
+
+#upcoming-events, #past-events {
+    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
   body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -964,6 +989,37 @@ margin:100px;
 
     .home-section .content p {
         font-size: 1rem;
+    }
+}
+    @media (max-width: 360px) {
+    .custom-navbar {
+        background-color: #f7f7f7;
+        box-shadow: none; /* Remove shadow for cleaner mobile view */
+        border-bottom: none;
+    }
+
+    .custom-navbar .navbar-brand {
+        font-size: 0.9rem; /* Adjust font size */
+        margin-left: 5px; /* Center the text */
+        margin-top: 0; /* Align properly */
+    }
+
+    .custom-navbar .navbar-logo {
+        height: 35px; /* Increase logo size */
+        width: 35px;
+        margin: 0 auto; /* Center the logo */
+    }
+
+    .custom-navbar #l {
+        font-size: 1rem; /* Adjust header size */
+        margin-top: 5px; /* Align header text */
+        text-align: center; /* Center align text */
+    }
+
+    .custom-navbar .nav-link,
+    .custom-navbar .btn-outline-dark,
+    .custom-navbar .btn-outline-primary {
+        display: none; /* Hide navigation links and buttons */
     }
 }
 .animate-charcter
