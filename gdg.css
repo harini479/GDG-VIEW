@@ -1439,7 +1439,7 @@ margin-right:285px;
         margin: 5px 0;
     }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 360px) {
     /* Adjust layout for smaller screens */
     .custom-navbar {
         flex-direction: column;
@@ -1675,125 +1675,6 @@ img {
     .home-section .content h1 {
         font-size: 4rem;
     }
-}
-    /* CSS for mobile view (360px - 414px screen width) */
-@media screen and (max-width: 414px) {
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  .custom-navbar {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .navbar-logo {
-    width: 80px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  #l {
-    font-size: 18px;
-    display: block;
-    margin-left:-100px;
-  }
-
-  .navbar-toggler {
-    border: none;
-  }
-
-  .navbar-toggler-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-item {
-    margin: 5px 0;
-  }
-
-  .home-section .content {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .animate-charcter {
-    font-size: 24px;
-  }
-
-  #homel, #homel1 {
-    font-size: 14px;
-  }
-
-  .boxes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .box {
-    width: 60px;
-    height: 60px;
-    background: #ccc;
-  }
-
-  .btn {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-
-  #events .event-card {
-    margin: 10px auto;
-    max-width: 90%;
-    text-align: center;
-  }
-
-  #events .event-card img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  #events .event-info {
-    font-size: 14px;
-  }
-
-  #team1 .profile {
-    text-align: center;
-    margin: 10px auto;
-    max-width: 150px;
-  }
-
-  #team1 .profile img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
-
-  #team1 .profile h3 {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-
-  #contact-us {
-    padding: 20px;
-    font-size: 14px;
-  }
-
-  #contact-us div a {
-    font-size: 12px;
-  }
-
-  footer {
-    font-size: 12px;
-  }
 }
 
 License Terms
