@@ -1544,7 +1544,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-@media (max-width: 576px) {
+@media (max-width: 360px) {
     /* Further adjustments for smaller mobile screens */
     .custom-navbar .navbar-brand {
         font-size: 1rem;
