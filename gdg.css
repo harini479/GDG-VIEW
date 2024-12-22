@@ -451,9 +451,9 @@ margin-bottom: -10px;
         font-size: 0.9em;
     }
 .row-separator {
-    border-top: 4px solid #d3d3d3;
+    border-top: 2px solid #d3d3d3;
     width: 95%;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
     /* Responsive Design for Mobile */
