@@ -1,45 +1,172 @@
+/* General Setup */
+:root {
+    --primary-color: #f39c12;
+    --secondary-color: #007BFF;
+    --light-bg: #f7f7f7;
+    --font-family: 'Poppins', sans-serif;
+    --text-color: #555555;
+    --heading-font-size: 2.5rem;
+    --base-font-size: 1rem;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    margin: 5%;
+    line-height: 1.5;
+}
+
+/* Navbar */
 .custom-navbar {
     display: flex;
-    align-items: center; /* Vertically align items */
-    justify-content: space-between; /* Space out items */
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    background-color: #f7f7f7;
+    background-color: var(--light-bg);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #e0e0e0;
 }
 
 .custom-navbar .navbar-brand {
-    font-weight: 600;
     font-size: 1.2rem;
-    margin: 0;
+    font-weight: bold;
 }
 
 .custom-navbar .nav-links {
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
 .custom-navbar .nav-link {
-    color: #555555;
-    font-size: 1rem;
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .custom-navbar .nav-link:hover {
-    color: #f39c12;
+    color: var(--primary-color);
 }
 
-.custom-navbar .view-section {
-    background-color: #f39c12;
+/* Button Styling */
+.custom-navbar .btn-outline-dark {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-navbar .btn-outline-dark:hover {
+    background-color: var(--text-color);
+    color: #ffffff;
+}
+
+/* Home Section */
+.home-section {
+    height: 100vh;
+    background: url('home.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
+    padding: 20px;
+}
+
+.home-section h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.home-section .btn {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: #ffffff;
     transition: background-color 0.3s;
 }
 
-.custom-navbar .view-section:hover {
-    background-color: #e67e22;
+.home-section .btn:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+/* Card Component */
+.card {
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Team Section */
+.team-section {
+    padding: 20px;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.team-section h1 {
+    font-size: var(--heading-font-size);
+    margin-bottom: 20px;
+}
+
+.profile {
+    margin: 15px;
+    text-align: center;
+    flex: 1 1 calc(25% - 30px);
+    max-width: calc(25% - 30px);
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .home-section h1 {
+        font-size: 3rem;
+    }
+
+    .custom-navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-navbar {
+        padding: 10px;
+    }
+
+    .home-section h1 {
+        font-size: 2rem;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
 }
