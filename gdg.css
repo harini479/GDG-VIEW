@@ -398,6 +398,16 @@ margin-bottom: -10px;
     .team-section {
         padding: 20px;
         text-align: left; /* Align all text to the left */
+  background-color: #f9f9f9; /* Light background color for team section */
+  padding: 50px 0;
+ /* No color fill */
+padding:1px;
+height:410px;
+width:95%;
+margin:8px;
+  overflow-y: auto; /* Allows vertical scrolling */
+  overflow-x: hidden;
+ background-color: #f0f8ff;
     }
 
     .team-section h1 {
