@@ -407,7 +407,7 @@ margin-bottom: -10px;
     }
     .team-section h3 {
          /* Center the title */
-        margin-right: 140px;
+        right: 140px;
         font-size:1.0rem;
     }
     .row {
