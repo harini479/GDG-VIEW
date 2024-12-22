@@ -395,12 +395,12 @@ margin-bottom: -10px;
         box-sizing: border-box;
     }
 
-    .team1 {
+    .team-section {
         padding: 20px;
         text-align: left; /* Align all text to the left */
     }
 
-    .team1 h1 {
+    .team-section h1 {
         font-size: 2em;
         text-align: center; /* Center the title */
         margin-bottom: 20px;
@@ -471,7 +471,7 @@ margin-bottom: -10px;
             height: 100px;
         }
 
-        .team1 h1 {
+        .team-section h1 {
             font-size: 1.5em; /* Adjust title size */
         }
     }
