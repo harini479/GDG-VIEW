@@ -408,6 +408,9 @@ margin:8px;
   overflow-y: auto; /* Allows vertical scrolling */
   overflow-x: hidden;
  background-color: #f0f8ff;
+        ::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
     }
 
     .team-section h1 {
