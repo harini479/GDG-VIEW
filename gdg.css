@@ -1555,9 +1555,9 @@ font-weight:200;
 }
 
 .footer-right img {
-  height: 50px; /* Set a fixed height */
-  max-width: 100px; /* Prevent the image from being too wide */
-  margin-right: 10px;
+  height: 15px; /* Set a fixed height */
+  max-width: 30px; /* Prevent the image from being too wide */
+  margin-right: 110px;
   object-fit: contain; /* Maintain the aspect ratio */
 }
 
