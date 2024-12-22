@@ -527,6 +527,7 @@ width:95%;
 margin:8px;
   overflow-y: auto; /* Allows vertical scrolling */
   overflow-x: hidden;
+    overflow-y: hidden;
  background-color: #f0f8ff;
 
 }
