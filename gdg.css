@@ -1184,6 +1184,7 @@ margin-bottom: -10px;
     .team-section {
         padding: 20px;
         text-align: left; /* Align all text to the left */
+        background-image:url('team.jpeg');
     }
 
     .team-section h1 {
