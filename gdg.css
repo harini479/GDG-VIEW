@@ -1698,7 +1698,7 @@ img {
   #l {
     font-size: 18px;
     display: block;
-    margin-left:10px;
+    margin-left:-100px;
   }
 
   .navbar-toggler {
