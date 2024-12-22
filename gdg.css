@@ -108,151 +108,85 @@ margin:8px;
 
 
 
-/* Reset styles */
-body, ul, li, a {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
+.hero-text {
+    z-index: 2; /* Text is above the video and overlay */
+    max-width: 80%;
+    margin: auto;
+}
+/* Custom Navbar */
+/* Custom Navbar */
+.custom-navbar {
+    background-color: #f7f7f7; /* Light grey background */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
 }
 
-/* Header styles */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #f4f4f4;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.custom-navbar .navbar-brand {
+    font-weight: 25;
+    font-size: 0.8rem;
+     /* Darker text for contrast */
+    margin-left:-50px;
+    margin-top:30px;
 }
 
-/* Left section of the header */
-.header-left {
-  display: flex;
-  align-items: center;
+.custom-navbar .navbar-logo {
+    height: 30px; /* Logo height */
+    width: auto;
+    background-color: transparent; /* Ensure no white background on logo */
+    border-radius: 15; /* Remove any unwanted borders */
 }
 
-.logo {
-  height: 50px;
-  margin-right: 10px;
+.custom-navbar .nav-link {
+    color: #555555; /* Grey text color */
+    font-weight: 400;
+    transition: color 0.3s;
+}
+.custom-navbar #l
+{
+ font-weight: 500px;
+    font-size: 1.4rem;
+    margin-top:-10px;
 }
 
-.header-text {
-  display: flex;
-  flex-direction: column;
+.custom-navbar .l1
+{
+margin-top:20px;
+ font-weight: 500;
+    font-size: 1.0rem;
+color: black;
+}
+.custom-navbar .nav-link:hover {
+    color: #f39c12; /* Golden orange hover effect */
 }
 
-.gdg {
-  font-size: 18px;
-  font-weight: bold;
+.custom-navbar .btn-outline-dark {
+    border-color: #555555;
+    color: #555555;
+    transition: background-color 0.3s, color 0.3s;
+margin:100px;
 }
 
-.on-campus {
-  font-size: 12px;
-  color: #555;
+.custom-navbar .btn-outline-dark:hover {
+    background-color: #555555;
+    color: #ffffff;
+margin:100px;
+}
+.custom-navbar .btn-outline-primary {
+    border-color: #f39c12;
+    color: #f39c12;
+margin:10px;
 }
 
-/* Navbar styles */
-.navbar {
-  display: flex;
+.custom-navbar .btn-outline-primary:hover {
+    background-color: #f39c12;
+    color: #ffff;
+margin:100px;
 }
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  font-size: 16px;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.nav-links li a:hover {
-  color: #007BFF;
-}
-
-/* Responsive Design */
-
-/* For tablets and smaller devices */
 @media (max-width: 768px) {
-  .header {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px;
-  }
-
-  .header-left {
-    flex: 1;
-  }
-
-  .nav-links {
-    flex: 1;
-    justify-content: space-around;
-  }
-
-  .nav-links li a {
-    font-size: 14px;
-  }
-}
-
-/* For mobile screens */
-@media (max-width: 480px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header-left {
-    margin-bottom: 10px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .nav-links li a {
-    font-size: 14px;
-    width: 100%;
-    text-align: left;
-  }
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Header</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header-left">
-      <img src="logo.png" alt="Logo" class="logo">
-      <div class="header-text">
-        <span class="gdg">GDG</span><br>
-        <span class="on-campus">on campus</span>
-      </div>
-    </div>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-</body>
-</html>
-
+    .home-section .content h1 {
+        font-size: 2rem;
+      
+    }
 
     .home-section .content p {
         font-size: 1rem;
@@ -1240,7 +1174,7 @@ margin-bottom: -10px;
 .event-info button:hover {
   background-color: #0056b3;
 }
-/*team section*/
+/team section/
           body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -1621,9 +1555,9 @@ font-weight:200;
 }
 
 .footer-right img {
-  height: 15px; /* Set a fixed height */
-  max-width: 30px; /* Prevent the image from being too wide */
-  margin-right: 110px;
+  height: 50px; /* Set a fixed height */
+  max-width: 100px; /* Prevent the image from being too wide */
+  margin-right: 10px;
   object-fit: contain; /* Maintain the aspect ratio */
 }
 
