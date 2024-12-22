@@ -388,31 +388,6 @@ margin-bottom: -10px;
 .event-info button:hover {
   background-color: #0056b3;
 }
-#upcoming-events, #past-events {
-    white-space: nowrap; /* Ensure horizontal scrolling */
-    overflow-x: hidden; /* Hide horizontal scroll */
-    overflow-y: hidden; /* Prevent vertical scroll */
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center; /* Center the content */
-    gap: 20px; /* Spacing between cards */
-}
-
-.event-card {
-    display: inline-block; /* Make sure cards stay inline */
-    scroll-snap-align: center; /* Optional for smooth snapping */
-}
-
-/* Hide scrollbar for all browsers */
-#upcoming-events::-webkit-scrollbar,
-#past-events::-webkit-scrollbar {
-    display: none;
-}
-
-#upcoming-events, #past-events {
-    -ms-overflow-style: none; /* IE 10+ */
-    scrollbar-width: none; /* Firefox */
-}
   body {
         font-family: Arial, sans-serif;
         margin: 0;
