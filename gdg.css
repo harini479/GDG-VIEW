@@ -535,8 +535,8 @@ margin-right:285px;
 }
     .navbar-logo {
         font-size: 2rem;
-        height:40px;
-        width:60px;
+        height:50px;
+        width:100px;
     }
     .navbar-heading {
         font-size: 1.2rem;
@@ -607,8 +607,8 @@ margin-right:285px;
 }
     .navbar-logo {
         font-size: 2rem;
-        height:40px;
-        width:60px;
+        height:50px;
+        width:100px;
     }
     .navbar-heading {
         font-size: 1.2rem;
@@ -682,8 +682,8 @@ margin:8px;
 }
 
 .custom-navbar .navbar-logo {
-    height:40px; /* Adjust logo height */
-    width: 60px;
+    height:50px; /* Adjust logo height */
+    width: 100px;
     background-color: transparent;
     /* Ensure no white background on logo */
 }
@@ -896,8 +896,8 @@ margin:8px;
 }
 
 .custom-navbar .navbar-logo {
-    height: 40px; /* Logo height */
-    width: 60px;
+    height: 50px; /* Logo height */
+    width: 100px;
     background-color: transparent; /* Ensure no white background on logo */
     border-radius: 15; /* Remove any unwanted borders */
 }
@@ -972,8 +972,8 @@ margin:100px;
     }
 
     .custom-navbar .navbar-logo {
-        height: 48px; /* Increase logo size */
-        width: 60px;
+        height: 50px; /* Increase logo size */
+        width: 100px;
         margin: 0 auto; /* Center the logo */
     }
 
@@ -1390,8 +1390,8 @@ margin-right:285px;
 }
     .navbar-logo {
         font-size: 2rem;
-        height:40px;
-        width:60px;;
+        height:50px;
+        width:100px;;
     }
     .navbar-heading {
         font-size: 1.2rem;
@@ -1466,8 +1466,8 @@ margin:8px;
 }
 
 .custom-navbar .navbar-logo {
-    height:40px; /* Adjust logo height */
-    width: 60px;
+    height:50px; /* Adjust logo height */
+    width: 100px;
     background-color: transparent;
     /* Ensure no white background on logo */
 }
