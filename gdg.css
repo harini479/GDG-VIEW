@@ -518,11 +518,12 @@ margin-bottom: -10px;
 #team1{
   background-color: #f9f9f9; /* Light background color for team section */
   padding: 50px 0;
- /* No color fill *
+ /* No color fill */
 }
     .custom-navbar {
         flex-direction: column;
         align-items: center;
+        background-color:#ffffff;
     }
 #l
 {
@@ -534,6 +535,8 @@ margin-right:285px;
 }
     .navbar-logo {
         font-size: 2rem;
+        height:40px;
+        width:auto;
     }
     .navbar-heading {
         font-size: 1.2rem;
@@ -554,6 +557,7 @@ margin-right:285px;
     .custom-navbar {
         flex-direction: column;
         align-items: center;
+        background-color:#ffffff;
     }
     
     .navbar-brand {
@@ -603,6 +607,8 @@ margin-right:285px;
 }
     .navbar-logo {
         font-size: 2rem;
+        height:40px;
+        width:auto;
     }
     .navbar-heading {
         font-size: 1.2rem;
@@ -876,7 +882,7 @@ margin:8px;
 /* Custom Navbar */
 /* Custom Navbar */
 .custom-navbar {
-    background-color: #f7f7f7; /* Light grey background */
+    background-color: #ffffff; /* Light grey background */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
 }
@@ -890,7 +896,7 @@ margin:8px;
 }
 
 .custom-navbar .navbar-logo {
-    height: 30px; /* Logo height */
+    height: 40px; /* Logo height */
     width: auto;
     background-color: transparent; /* Ensure no white background on logo */
     border-radius: 15; /* Remove any unwanted borders */
@@ -954,7 +960,7 @@ margin:100px;
 }
     @media (max-width: 360px) {
     .custom-navbar {
-        background-color: #f7f7f7;
+        background-color: #ffffff;
         box-shadow: none; /* Remove shadow for cleaner mobile view */
         border-bottom: none;
     }
@@ -966,8 +972,8 @@ margin:100px;
     }
 
     .custom-navbar .navbar-logo {
-        height: 35px; /* Increase logo size */
-        width: 35px;
+        height: 48px; /* Increase logo size */
+        width: auto;
         margin: 0 auto; /* Center the logo */
     }
 
@@ -1268,6 +1274,7 @@ margin-bottom: -10px;
     .custom-navbar {
         flex-direction: column;
         align-items: center;
+        background-color:#ffffff;
     }
     
     .navbar-brand {
@@ -1333,6 +1340,7 @@ margin-right:285px;
     .custom-navbar {
         flex-direction: column;
         align-items: center;
+        background-color:#ffffff;
     }
     
     .navbar-brand {
@@ -1382,6 +1390,8 @@ margin-right:285px;
 }
     .navbar-logo {
         font-size: 2rem;
+        height:40px;
+        width:auto;
     }
     .navbar-heading {
         font-size: 1.2rem;
@@ -1402,6 +1412,7 @@ margin-right:285px;
     .custom-navbar {
         flex-direction: column;
         align-items: center;
+        background-color:
     }
     
     .navbar-brand {
@@ -1443,7 +1454,7 @@ margin:8px;
     align-items: center; /* Vertically align items */
     justify-content: space-between; /* Space out items */
     padding: 10px 20px; /* Add padding */
-    background-color: #f7f7f7; /* Light grey background */
+    background-color: #ffffff; /* Light grey background */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
 }
@@ -1455,7 +1466,7 @@ margin:8px;
 }
 
 .custom-navbar .navbar-logo {
-    height:32px; /* Adjust logo height */
+    height:40px; /* Adjust logo height */
     width: auto;
     background-color: transparent;
     /* Ensure no white background on logo */
