@@ -492,6 +492,7 @@ margin-bottom: -10px;
     .custom-navbar {
         flex-direction: column;
         align-items: center;
+        background-color:#ffffff;
     }
     
     .navbar-brand {
@@ -663,7 +664,7 @@ margin:8px;
     align-items: center; /* Vertically align items */
     justify-content: space-between; /* Space out items */
     padding: 10px 20px; /* Add padding */
-    background-color: #f7f7f7; /* Light grey background */
+    background-color: #ffffff; /* Light grey background */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
 }
@@ -675,7 +676,7 @@ margin:8px;
 }
 
 .custom-navbar .navbar-logo {
-    height:32px; /* Adjust logo height */
+    height:40px; /* Adjust logo height */
     width: auto;
     background-color: transparent;
     /* Ensure no white background on logo */
