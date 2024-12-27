@@ -103,11 +103,11 @@
         }
         .events-wrapper {
             display: flex;
-            flex-direction: column; /* Stack the cards vertically */
+            flex-direction: column; /* Stack cards vertically */
             gap: 20px; /* Adds space between the event cards */
-            max-height: 600px; /* Limit the container's height */
-            overflow-y: auto; /* Enables vertical scrolling */
-            padding-bottom: 20px; /* Space for scrollbar */
+            height: 400px; /* Set a fixed height for the scrollable area */
+            overflow-y: scroll; /* Enables vertical scrolling */
+            padding-bottom: 20px; /* Adds space for scrollbar */
             scroll-behavior: smooth; /* Smooth scrolling */
         }
         .event-card {
@@ -234,6 +234,7 @@
     </script>
 </body>
 </html>
+
 
 
 
