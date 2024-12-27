@@ -69,7 +69,7 @@
 
   
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <title>Event Page with Animations</title>
@@ -103,10 +103,12 @@
         }
         .events-wrapper {
             display: flex;
+            flex-wrap: nowrap; /* Ensure cards stay on one line */
             overflow-x: auto; /* Enables horizontal scrolling */
             gap: 20px; /* Adds space between the event cards */
             padding-bottom: 20px; /* Space for scrollbar */
             scroll-behavior: smooth; /* Smooth scrolling */
+            padding-left: 20px; /* Some space on the left for better alignment */
         }
         .event-card {
             background-color: #fff;
@@ -159,6 +161,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- Upcoming Events Section -->
         <h2 class="section-title">Upcoming Events</h2>
         <div class="events-wrapper">
             <div class="event-card" data-aos="fade-up">
@@ -184,6 +187,7 @@
     </div>
 
     <div class="container">
+        <!-- Past Events Section -->
         <h2 class="section-title">Past Events</h2>
         <div class="events-wrapper">
             <div class="event-card" data-aos="fade-up">
@@ -230,6 +234,7 @@
     </script>
 </body>
 </html>
+
 
 
 
