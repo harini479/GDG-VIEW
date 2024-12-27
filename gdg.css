@@ -1597,6 +1597,14 @@ font-weight:200;
         width: 100%; /* Full width of the container */
     }
 }
+    .team-profile img {
+    width: 150px; /* Increased width */
+    height: 150px; /* Increased height to make the image square */
+    object-fit: cover; /* Ensures the image scales proportionally and fits the square shape */
+    border-radius: 10px; /* Optional rounded corners */
+    margin-right: 20px; /* Adjust spacing from the text */
+}
+
 
 
 License Terms
