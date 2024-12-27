@@ -1604,7 +1604,13 @@ font-weight:200;
     border-radius: 10px; /* Optional rounded corners */
     margin-right: 20px; /* Adjust spacing from the text */
 }
-
+header {
+    height: 10vh; /* Adjust the height as needed */
+    padding: 10px 20px; /* Reduce padding for compact spacing */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Adjust alignment */
+}
 
 
 License Terms
