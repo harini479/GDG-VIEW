@@ -226,130 +226,178 @@
 
     <!-- Team Section -->
 
-<section id="team1" class="py-5 team-section">
-            <h1>Meet Our Team</h1>
-        
-        <!-- Faculty Advisor -->
-    <div class="row-separator"></div>
-    <h3 class="heading">Faculty Advisor</h3>
-        <div class="row">
-            <div class="profile">
-                <img src="faculty.jpeg" alt="Faculty Advisor">
-                <h3>Ganga Parvathi</h3>
-                <p>Faculty Advisor</p>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Section</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Left Side Styling */
+        .team-left {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .team-left h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .team-left img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Right Side Styling */
+        .team-right {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            height: 400px; /* Set height for scrolling */
+            overflow-y: auto; /* Enable vertical scroll */
+            scrollbar-width: thin; /* For modern browsers */
+            scrollbar-color: #007BFF #f9f9f9;
+            padding: 20px;
+        }
+
+        .team-right::-webkit-scrollbar {
+            width: 8px; /* Width of scrollbar */
+        }
+
+        .team-right::-webkit-scrollbar-thumb {
+            background-color: #007BFF; /* Scrollbar thumb color */
+            border-radius: 10px;
+        }
+
+        .team-profile {
+            display: flex;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .team-profile:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-profile img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .team-profile .profile-info {
+            flex-grow: 1;
+        }
+
+        .team-profile .profile-info h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .team-profile .profile-info p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .team-section {
+                flex-direction: column;
+            }
+
+            .team-left, .team-right {
+                flex: unset;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="team-section">
+        <!-- Left Side -->
+        <div class="team-left">
+            <h2>Meet Our Team</h2>
+            <img src="team-placeholder.jpg" alt="Team Image">
         </div>
-    <div class="row-separator"></div>
-        <!-- Team Lead -->
-            <h3 class="heading">Team Lead</h3>
-        <div class="row">
-            <div class="profile">
-                <img src="thanuja.jpeg" alt="Team Lead">
-                <h3>Thanuja Sai</h3>
-                <p>Team Lead</p>
+
+        <!-- Right Side -->
+        <div class="team-right">
+            <div class="team-profile">
+                <img src="profile1.jpg" alt="Profile Image">
+                <div class="profile-info">
+                    <h3>John Doe</h3>
+                    <p>Team Lead</p>
+                </div>
             </div>
-        </div>
-    <div class="row-separator"></div>
-        <!-- Core Team -->
-    <h3 class="heading">Core Team</h3>
-        <div class="row">
-            <div class="profile">
-                <img src="1.jpeg" alt="Core Member">
-                <h3>Sharvani Subudhi</h3>
-                <p>Data Analyst</p>
+
+            <div class="team-profile">
+                <img src="profile2.jpg" alt="Profile Image">
+                <div class="profile-info">
+                    <h3>Jane Smith</h3>
+                    <p>UI/UX Designer</p>
+                </div>
             </div>
-            <div class="profile">
-                <img src="2.jpeg" alt="Core Member">
-                <h3>Pranathi Sri</h3>
-                <p>Tech Team</p>
+
+            <div class="team-profile">
+                <img src="profile3.jpg" alt="Profile Image">
+                <div class="profile-info">
+                    <h3>Emily Johnson</h3>
+                    <p>Full Stack Developer</p>
+                </div>
             </div>
-            <div class="profile">
-                <img src="3.jpeg" alt="Core Member">
-                <h3>B Vasanthi</h3>
-                <p>Tech Team</p>
+
+            <div class="team-profile">
+                <img src="profile4.jpg" alt="Profile Image">
+                <div class="profile-info">
+                    <h3>Michael Brown</h3>
+                    <p>Data Scientist</p>
+                </div>
             </div>
-               <div class="profile">
-                <img src="4.jpeg" alt="Core Member">
-                <h3>C H Trisha Pavani</h3>
-                <p>Design Team</p>
+
+            <div class="team-profile">
+                <img src="profile5.jpg" alt="Profile Image">
+                <div class="profile-info">
+                    <h3>Sarah Wilson</h3>
+                    <p>Cloud Architect</p>
+                </div>
             </div>
-               <div class="profile">
-                <img src="5.jpeg" alt="Core Member">
-                <h3>V Praneetha</h3>
-                <p>Data Analyst</p>
-            </div>
-               <div class="profile">
-                <img src="6.jpeg" alt="Core Member">
-                <h3>M Vani</h3>
-                <p>Design Team</p>
-            </div>
-               <div class="profile">
-                <img src="7.jpeg" alt="Core Member">
-                <h3>P Kaarthikeyani</h3>
-                <p>Tech Team</p>
-            </div>
-               <div class="profile">
-                <img src="8.jpeg" alt="Core Member">
-                <h3>M Lekha</h3>
-                <p>Media Manager</p>
-            </div>
-               <div class="profile">
-                <img src="9.jpeg" alt="Core Member">
-                <h3>D Neha</h3>
-                <p>SR.PR Manager</p>
-            </div>
-               <div class="profile">
-                <img src="10.jpeg" alt="Core Member">
-                <h3>Geethanjali Kuwar</h3>
-                <p>Design Team</p>
-            </div>
-               <div class="profile">
-                <img src="11.jpeg" alt="Core Member">
-                <h3>Bhavna</h3>
-                <p>Tech Team</p>
-            </div>
-               <div class="profile">
-                <img src="12.jpeg" alt="Core Member">
-                <h3>C H Vandana</h3>
-                <p>Data Analyst</p>
-            </div>
-               <div class="profile">
-                <img src="13.jpeg" alt="Core Member">
-                <h3>N Sharmila</h3>
-                <p>PR Manager</p>
-            </div>
-               <div class="profile">
-                <img src="14.jpeg" alt="Core Member">
-                <h3>R Harini</h3>
-                <p>Tech Team</p>
-            </div>
-               <div class="profile">
-                <img src="15.jpeg" alt="Core Member">
-                <h3>Anjali Krishna Behra</h3>
-                <p>Content Writer</p>
-            </div>
-               <div class="profile">
-                <img src="16.jpeg" alt="Core Member">
-                <h3>G Snehitha</h3>
-                <p>Design Team</p>
-            </div>
-               <div class="profile">
-                <img src="17.jpeg" alt="Core Member">
-                <h3>Sharmila Adari</h3>
-                <p>Tech Team</p>
-            </div>
-               <div class="profile">
-                <img src="18.jpeg" alt="Core Member">
-                <h3>Reethika Neelam</h3>
-                <p>Media Manager</p>
-               </div>
-               <div class="profile">
-                <img src="19.jpeg" alt="Core Member">
-                <h3>Ramya Thodeti</h3>
-                <p>PR Manager</p>
-            </div>
-             </div>
-        </div>
+
+
+
     </section>
 <section id="contact-us" style="padding: 40px; background-color: #f9f9f9; text-align: center;">
   <h2>Contact Us</h2>
