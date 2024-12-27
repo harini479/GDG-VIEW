@@ -1588,5 +1588,15 @@ font-weight:200;
   font-size: 14px;
   color: #555;
 }
+    @media (max-width: 768px) {
+    .events-wrapper {
+        flex-wrap: wrap; /* Stack the cards vertically on smaller screens */
+        justify-content: center;
+    }
+    .event-card {
+        width: 100%; /* Full width of the container */
+    }
+}
+
 
 License Terms
