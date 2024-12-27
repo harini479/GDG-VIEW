@@ -134,7 +134,7 @@ margin:8px;
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px; /* Adjust dimensions */
-    height: auto;
+    height: 100px;
      background-color: #d3d3d3;
    cursor:pointer;
 }
