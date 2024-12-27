@@ -13,17 +13,22 @@
             line-height: 1.6;
         }
         .hero {
-            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            background: url('https://gdgc-viit.netlify.app/images/hero-bg.jpg') no-repeat center center/cover;
             height: 100vh;
             color: white;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
         }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
         }
         .navbar {
             background-color: #343a40;
@@ -43,6 +48,12 @@
             padding: 1.5rem 0;
             text-align: center;
         }
+        .event-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -50,7 +61,10 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">GDGC VIIT</a>
+            <a class="navbar-brand" href="#">
+                <img src="https://gdgc-viit.netlify.app/images/GDGC_LOGO.svg" alt="GDGC Logo" height="40">
+                <span class="ms-2">GDG</span><br><small>On Campus View</small>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,18 +80,17 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero">
-        <div>
-            <h1 class="animate__animated animate__fadeInDown">Welcome to GDGC VIIT</h1>
-            <p class="animate__animated animate__fadeInUp">Your gateway to innovation and collaboration</p>
-        </div>
+    <div class="hero animate__animated animate__fadeIn">
+        <h1>GDG</h1>
+        <p>On Campus View</p>
+        <a href="#about" class="btn btn-primary mt-4">Learn More</a>
     </div>
 
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container text-center">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <p>We are a vibrant community of developers fostering innovation and collaboration at VIIT.</p>
         </div>
     </section>
 
@@ -85,18 +98,24 @@
     <section id="events" class="section">
         <div class="container text-center">
             <h2>Our Events</h2>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-md-4">
-                    <h3>Event 1</h3>
-                    <p>Description of Event 1.</p>
+                    <div class="event-card">
+                        <h3>Event 1</h3>
+                        <p>An exciting event showcasing the best of technology and innovation.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3>Event 2</h3>
-                    <p>Description of Event 2.</p>
+                    <div class="event-card">
+                        <h3>Event 2</h3>
+                        <p>Join us for workshops and sessions with industry experts.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3>Event 3</h3>
-                    <p>Description of Event 3.</p>
+                    <div class="event-card">
+                        <h3>Event 3</h3>
+                        <p>Hackathons and competitions to test your skills and creativity.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,18 +125,18 @@
     <section id="team" class="section">
         <div class="container text-center">
             <h2>Meet Our Team</h2>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-md-4">
                     <h3>Member 1</h3>
-                    <p>Role or description.</p>
+                    <p>Team Lead</p>
                 </div>
                 <div class="col-md-4">
                     <h3>Member 2</h3>
-                    <p>Role or description.</p>
+                    <p>Developer</p>
                 </div>
                 <div class="col-md-4">
                     <h3>Member 3</h3>
-                    <p>Role or description.</p>
+                    <p>Designer</p>
                 </div>
             </div>
         </div>
@@ -127,7 +146,7 @@
     <section id="contact" class="section">
         <div class="container text-center">
             <h2>Contact Us</h2>
-            <form>
+            <form class="mt-4">
                 <div class="row">
                     <div class="col-md-6">
                         <input type="text" class="form-control mb-3" placeholder="Your Name">
