@@ -116,60 +116,70 @@ margin:8px;
 /* Custom Navbar */
 /* Custom Navbar */
 /* Custom Navbar */
+/* Navbar Styling */
 .custom-navbar {
     background-color: #ffffff;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #e0e0e0;
-    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 8px 20px; /* Reduced padding for a compact look */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+/* Logo */
 .custom-navbar .navbar-logo img {
-    width: 150px;
+    width: 80px; /* Adjusted logo size for a better fit */
     height: auto;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
+/* Brand Name */
 .custom-navbar .navbar-brand {
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Reduced font size */
+    font-weight: 700;
     color: #333333;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin-left: 10px;
-}
-
-.custom-navbar #l {
-    font-size: 1.4rem;
-    font-weight: 600;
+    align-items: center;
     margin: 0;
 }
 
-.custom-navbar .l1 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #666666;
-    margin: 0;
-}
-
+/* Navigation Links */
 .custom-navbar .nav-item {
-    margin-left: 15px;
+    margin: 0 10px; /* Slightly reduced spacing */
 }
 
 .custom-navbar .nav-link {
-    font-size: 1rem;
-    color: #555555;
-    font-weight: 400;
+    font-size: 1rem; /* Slightly smaller font size for compact design */
+    font-weight: 500;
+    color: #333333;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .custom-navbar .nav-link:hover {
-    color: #f39c12;
+    color: #f39c12; /* Highlight color on hover */
 }
 
-.navbar-toggler {
-    border: none;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .custom-navbar .navbar-logo img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+
+    .custom-navbar .navbar-brand {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .custom-navbar .nav-item {
+        margin: 5px 0;
+    }
 }
 @media (max-width: 768px) {
     .home-section .content h1 {
