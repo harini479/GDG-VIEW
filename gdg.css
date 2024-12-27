@@ -133,8 +133,8 @@ margin:8px;
     background-image: url('logo2.jpg'); /* Adjust the path based on your file structure */
     background-size: contain;
     background-repeat: no-repeat;
-    width: 150px; /* Adjust dimensions */
-    height: 50px;
+    width: 200px; /* Adjust dimensions */
+    height: auto;
      background-color: #d3d3d3;
    cursor:pointer;
 }
@@ -1610,6 +1610,17 @@ header {
     display: flex;
     align-items: center; /* Vertically center content */
     justify-content: space-between; /* Adjust alignment */
+}
+    .custom-navbar {
+    display: flex;
+    justify-content: space-between; /* Align logo and links */
+    align-items: center;
+    background-color: #d3d3d3; /* Navbar background */
+    padding: 10px 20px; /* Inner spacing */
+    margin: 10px 0; /* Adjust the margin here */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 10vh; /* Navbar height */
+    cursor: pointer;
 }
 
 
