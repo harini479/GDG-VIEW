@@ -92,7 +92,7 @@
         }
         .container {
             max-width: 1200px;
-            margin: 0 auto; /* Centers the container */
+            margin: 20px auto;
             padding: 20px;
         }
         .section-title {
@@ -103,11 +103,11 @@
         }
         .events-wrapper {
             display: flex;
-            flex-direction: column; /* Stack cards vertically */
+            flex-direction: column; /* Stack the cards vertically */
             gap: 20px; /* Adds space between the event cards */
-            height: 400px; /* Set a fixed height for the scrollable area */
-            overflow-y: scroll; /* Enables vertical scrolling */
-            padding-bottom: 20px; /* Adds space for scrollbar */
+            max-height: 600px; /* Limit the container's height */
+            overflow-y: auto; /* Enables vertical scrolling */
+            padding-bottom: 20px; /* Space for scrollbar */
             scroll-behavior: smooth; /* Smooth scrolling */
         }
         .event-card {
@@ -115,7 +115,7 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 100%; /* Ensure event card takes full width */
+            width: 100%;
             margin: 10px 0;
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -160,7 +160,6 @@
     </style>
 </head>
 <body>
-    <!-- Upcoming Events Section -->
     <div class="container">
         <h2 class="section-title">Upcoming Events</h2>
         <div class="events-wrapper">
@@ -186,7 +185,6 @@
         </div>
     </div>
 
-    <!-- Past Events Section -->
     <div class="container">
         <h2 class="section-title">Past Events</h2>
         <div class="events-wrapper">
@@ -234,11 +232,6 @@
     </script>
 </body>
 </html>
-
-
-
-
-
 
 
 
