@@ -226,7 +226,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Team Section</title>
+    <title>Team Section with Adjustments</title>
     <style>
         /* General Styles */
         body {
@@ -240,7 +240,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start; /* Ensure proper alignment */
             padding: 50px;
             max-width: 1200px;
             margin: 0 auto;
@@ -249,17 +249,38 @@
             border-radius: 10px;
         }
 
+        /* Left Side Styling */
+        .team-left {
+            flex: 1;
+            max-width: 35%; /* Ensure visibility of left column */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .team-left h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .team-left img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         /* Right Side Styling */
         .team-right {
             flex: 2;
+            max-width: 60%; /* Ensure space for the right column */
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            max-height: 400px;
+            height: 400px; /* Set height for scrolling */
             overflow-y: auto;
-            padding: 20px;
             scrollbar-width: thin;
             scrollbar-color: #007BFF #f9f9f9;
+            padding: 20px;
         }
 
         .team-right::-webkit-scrollbar {
@@ -276,10 +297,10 @@
             align-items: center;
             background-color: #f5f5f5;
             padding: 15px;
+            margin-bottom: 15px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
-            gap: 20px;
         }
 
         .team-profile:hover {
@@ -287,11 +308,11 @@
         }
 
         .team-profile img {
-            width: 120px;
-            height: 120px;
-            border-radius: 10px; /* Square shape */
-            object-fit: cover; /* Ensure images maintain aspect ratio */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 120px; /* Increased size */
+            height: 120px; /* Square shape */
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 15px;
         }
 
         .team-profile .profile-info {
@@ -299,174 +320,116 @@
         }
 
         .team-profile .profile-info h3 {
-            margin: 0 0 10px;
-            font-size: 1.4rem;
+            margin: 0;
+            font-size: 1.2rem;
             color: #333;
         }
 
         .team-profile .profile-info p {
-            margin: 0 0 10px;
-            font-size: 1rem;
+            margin: 5px 0;
+            font-size: 0.9rem;
             color: #666;
         }
 
-        .team-profile .profile-links {
+        .social-links {
             display: flex;
             gap: 10px;
             margin-top: 10px;
         }
 
-        .team-profile .profile-links a {
-            display: flex;
-            align-items: center;
+        .social-links img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Contact Section */
+        #contact-us {
+            padding: 40px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        #contact-us h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        #contact-us p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        #contact-us a {
             text-decoration: none;
-            color: #007BFF;
+            color: #333;
             font-size: 1rem;
         }
 
-        .team-profile .profile-links img {
-            width: 20px;
-            height: 20px;
-            margin-right: 5px;
+        #contact-us img {
+            width: 30px; /* Adjusted size */
+            height: 30px;
+            margin-bottom: 10px;
         }
 
-        /* Responsive Design */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
         @media (max-width: 768px) {
             .team-section {
                 flex-direction: column;
             }
 
-            .team-profile {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .team-profile img {
-                margin-bottom: 15px;
-            }
-
-            .team-profile .profile-info {
-                text-align: center;
-            }
-
-            .team-profile .profile-links {
-                justify-content: center;
+            .team-left, .team-right {
+                max-width: 100%;
+                flex: unset;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Team Section -->
     <div class="team-section">
+        <!-- Left Side -->
+        <div class="team-left">
+            <h2>Meet Our Team</h2>
+            <img src="team-placeholder.jpg" alt="Team Image">
+        </div>
+
+        <!-- Right Side -->
         <div class="team-right">
-            <!-- Example Team Member -->
             <div class="team-profile">
                 <img src="profile1.jpg" alt="Profile Image">
                 <div class="profile-info">
                     <h3>John Doe</h3>
                     <p>Team Lead</p>
-                    <div class="profile-links">
-                        <a href="https://linkedin.com" target="_blank">
-                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
-                        </a>
-                        <a href="https://github.com" target="_blank">
-                            <img src="github-icon.png" alt="GitHub"> GitHub
-                        </a>
+                    <div class="social-links">
+                        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="github-icon.png" alt="GitHub"></a>
                     </div>
                 </div>
             </div>
-
-            <!-- Repeat for Other Team Members -->
-            <div class="team-profile">
-                <img src="profile2.jpg" alt="Profile Image">
-                <div class="profile-info">
-                    <h3>Jane Smith</h3>
-                    <p>UI/UX Designer</p>
-                    <div class="profile-links">
-                        <a href="https://linkedin.com" target="_blank">
-                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
-                        </a>
-                        <a href="https://github.com" target="_blank">
-                            <img src="github-icon.png" alt="GitHub"> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-profile">
-                <img src="profile3.jpg" alt="Profile Image">
-                <div class="profile-info">
-                    <h3>Emily Johnson</h3>
-                    <p>Full Stack Developer</p>
-                    <div class="profile-links">
-                        <a href="https://linkedin.com" target="_blank">
-                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
-                        </a>
-                        <a href="https://github.com" target="_blank">
-                            <img src="github-icon.png" alt="GitHub"> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-             <div class="team-profile">
-                <img src="profile3.jpg" alt="Profile Image">
-                <div class="profile-info">
-                    <h3>Emily Johnson</h3>
-                    <p>Full Stack Developer</p>
-                    <div class="profile-links">
-                        <a href="https://linkedin.com" target="_blank">
-                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
-                        </a>
-                        <a href="https://github.com" target="_blank">
-                            <img src="github-icon.png" alt="GitHub"> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-                 <div class="team-profile">
-                <img src="profile3.jpg" alt="Profile Image">
-                <div class="profile-info">
-                    <h3>Emily Johnson</h3>
-                    <p>Full Stack Developer</p>
-                    <div class="profile-links">
-                        <a href="https://linkedin.com" target="_blank">
-                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
-                        </a>
-                        <a href="https://github.com" target="_blank">
-                            <img src="github-icon.png" alt="GitHub"> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <!-- Add more profiles here -->
         </div>
     </div>
-</body>
-</html>
-
 
     <!-- Contact Section -->
-    <div class="contact-section" id="contact-us">
+    <section id="contact-us">
         <h2>Contact Us</h2>
         <p>Feel free to connect with us through the following platforms:</p>
-        <a href="#" target="_blank">
-            <img src="Linked.png" alt="LinkedIn">
-            <p>LinkedIn</p>
-        </a>
-        <a href="mailto:gdgview@gmail.com">
-            <img src="mail.jpeg" alt="Email">
-            <p>Email</p>
-        </a>
-        <a href="https://www.instagram.com/gdg_on_campus_view?igsh=aDd1cW5yNmx3OXh0" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-            <p>Instagram</p>
-        </a>
-    </div>
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+            <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn">LinkedIn</a>
+            <a href="mailto:gdgview@gmail.com"><img src="mail-icon.png" alt="Email">Email</a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram">Instagram</a>
+        </div>
+    </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>© 2024 GDG Custom | All rights reserved. <a href="#">Privacy Policy</a></p>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 GDG Custom | All rights reserved.</p>
     </footer>
 </body>
 </html>
-
