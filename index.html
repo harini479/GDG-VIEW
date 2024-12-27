@@ -103,8 +103,10 @@
         }
         .events-wrapper {
             display: flex;
-            overflow-x: auto; /* Enables horizontal scrolling */
+            flex-direction: column; /* Stack the cards vertically */
             gap: 20px; /* Adds space between the event cards */
+            max-height: 600px; /* Limit the container's height */
+            overflow-y: scroll; /* Enables vertical scrolling */
             padding-bottom: 20px; /* Space for scrollbar */
             scroll-behavior: smooth; /* Smooth scrolling */
         }
@@ -113,7 +115,7 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 300px; /* Fixed width for each card */
+            width: 100%;
             margin: 10px 0;
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -158,6 +160,7 @@
     </style>
 </head>
 <body>
+    <!-- Upcoming Events Section -->
     <div class="container">
         <h2 class="section-title">Upcoming Events</h2>
         <div class="events-wrapper">
@@ -183,6 +186,7 @@
         </div>
     </div>
 
+    <!-- Past Events Section -->
     <div class="container">
         <h2 class="section-title">Past Events</h2>
         <div class="events-wrapper">
@@ -241,6 +245,7 @@
     </script>
 </body>
 </html>
+
 
 
 
