@@ -100,11 +100,10 @@
             font-size: 2em;
             text-align: center;
             color: #333;
-            width: 100%; /* Ensure heading takes up full width */
-            clear: both; /* Clears any floated elements (if any) */
         }
         .events-wrapper {
             display: flex;
+            flex-wrap: nowrap; /* Ensure cards stay on one line */
             overflow-x: auto; /* Enables horizontal scrolling */
             gap: 20px; /* Adds space between the event cards */
             padding-bottom: 20px; /* Space for scrollbar */
@@ -235,6 +234,7 @@
     </script>
 </body>
 </html>
+
 
 
 
