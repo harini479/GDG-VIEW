@@ -223,7 +223,6 @@
 
 
     <!-- Team Section -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -244,7 +243,7 @@
             align-items: center;
             padding: 50px;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 50px auto; /* Added margin to separate sections */
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
@@ -329,6 +328,59 @@
             color: #666;
         }
 
+        /* Contact Section */
+        .contact-section {
+            padding: 40px;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 50px auto; /* Added margin to separate sections */
+            max-width: 1200px;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .contact-section a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .contact-section a img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .team-section {
@@ -343,6 +395,7 @@
     </style>
 </head>
 <body>
+    <!-- Team Section -->
     <div class="team-section">
         <!-- Left Side -->
         <div class="team-left">
@@ -367,68 +420,54 @@
                     <p>UI/UX Designer</p>
                 </div>
             </div>
-
-            <div class="team-profile">
-                <img src="profile3.jpg" alt="Profile Image">
-                <div class="profile-info">
-                    <h3>Emily Johnson</h3>
-                    <p>Full Stack Developer</p>
-                </div>
-            </div>
-
-            <div class="team-profile">
-                <img src="profile4.jpg" alt="Profile Image">
-                <div class="profile-info">
-                    <h3>Michael Brown</h3>
-                    <p>Data Scientist</p>
-                </div>
-            </div>
-
-            <div class="team-profile">
-                <img src="profile5.jpg" alt="Profile Image">
-                <div class="profile-info">
-                    <h3>Sarah Wilson</h3>
-                    <p>Cloud Architect</p>
-                </div>
-            </div>
-</section>
-
             
-            
- <!-- contact Section -->
+            <div class="team-profile">
+                <img src="study.jpg" alt="Profile Image">
+                <div class="profile-info">
+                    <h3>John Doe</h3>
+                    <p>Team Lead</p>
+                </div>
+            </div>
 
-</section>
-<section id="contact-us" style="padding: 40px; background-color: #f9f9f9; text-align: center;">
-  <h2>Contact Us</h2>
-  <p>Feel free to connect with us through the following platforms:</p>
+             <div class="team-profile">
+                <img src="profile2.jpg" alt="Profile Image">
+                <div class="profile-info">
+                    <h3>Jane Smith</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+            </div>
+             <div class="team-profile">
+                <img src="study.jpg" alt="Profile Image">
+                <div class="profile-info">
+                    <h3>John Doe</h3>
+                    <p>Team Lead</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact-us">
+        <h2>Contact Us</h2>
+        <p>Feel free to connect with us through the following platforms:</p>
+        <a href="#" target="_blank">
+            <img src="Linked.png" alt="LinkedIn">
+            <p>LinkedIn</p>
+        </a>
+        <a href="mailto:gdgview@gmail.com">
+            <img src="mail.jpeg" alt="Email">
+            <p>Email</p>
+        </a>
+        <a href="https://www.instagram.com/gdg_on_campus_view?igsh=aDd1cW5yNmx3OXh0" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <p>Instagram</p>
+        </a>
+    </div>
 
-
-    <a href="#" target="_blank" style="text-decoration: none; color: #333; font-size: 24px;">
-      <img src="Linked.png" alt="LinkedIn" style="width: 40px; height: 40px;">
-      <p>LinkedIn</p>
-    </a>
-
-    <a href="mailto:gdgview@gmail.com" style="text-decoration: none; color: #333; font-size: 24px;">
-      <img src="mail.jpeg" style="width: 40px; height: 40px;">
-      <p>Email</p>
-    </a>
-
-    <a href="https://www.instagram.com/gdg_on_campus_view?igsh=aDd1cW5yNmx3OXh0" target="_blank" style="text-decoration: none; color: #333; font-size: 24px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;">
-      <p>Instagram</p>
-    </a>
-  </div>
-</section>
-    <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2024 GDG Custom | All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2024 GDG Custom | All rights reserved. <a href="#">Privacy Policy</a></p>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
 </body>
 </html>
+
