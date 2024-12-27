@@ -243,30 +243,10 @@
             align-items: center;
             padding: 50px;
             max-width: 1200px;
-            margin: 50px auto; /* Added margin to separate sections */
+            margin: 0 auto;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-        }
-
-        /* Left Side Styling */
-        .team-left {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .team-left h2 {
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .team-left img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         /* Right Side Styling */
@@ -274,19 +254,20 @@
             flex: 2;
             display: flex;
             flex-direction: column;
-            height: 400px; /* Set height for scrolling */
-            overflow-y: auto; /* Enable vertical scroll */
-            scrollbar-width: thin; /* For modern browsers */
-            scrollbar-color: #007BFF #f9f9f9;
+            gap: 20px;
+            max-height: 400px;
+            overflow-y: auto;
             padding: 20px;
+            scrollbar-width: thin;
+            scrollbar-color: #007BFF #f9f9f9;
         }
 
         .team-right::-webkit-scrollbar {
-            width: 8px; /* Width of scrollbar */
+            width: 8px;
         }
 
         .team-right::-webkit-scrollbar-thumb {
-            background-color: #007BFF; /* Scrollbar thumb color */
+            background-color: #007BFF;
             border-radius: 10px;
         }
 
@@ -295,10 +276,10 @@
             align-items: center;
             background-color: #f5f5f5;
             padding: 15px;
-            margin-bottom: 15px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
+            gap: 20px;
         }
 
         .team-profile:hover {
@@ -306,10 +287,11 @@
         }
 
         .team-profile img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            margin-right: 15px;
+            width: 120px;
+            height: 120px;
+            border-radius: 10px; /* Square shape */
+            object-fit: cover; /* Ensure images maintain aspect ratio */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .team-profile .profile-info {
@@ -317,68 +299,35 @@
         }
 
         .team-profile .profile-info h3 {
-            margin: 0;
-            font-size: 1.2rem;
+            margin: 0 0 10px;
+            font-size: 1.4rem;
             color: #333;
         }
 
         .team-profile .profile-info p {
-            margin: 5px 0 0;
-            font-size: 0.9rem;
+            margin: 0 0 10px;
+            font-size: 1rem;
             color: #666;
         }
 
-        /* Contact Section */
-        .contact-section {
-            padding: 40px;
-            background-color: #f9f9f9;
-            text-align: center;
-            margin: 50px auto; /* Added margin to separate sections */
-            max-width: 1200px;
+        .team-profile .profile-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
         }
 
-        .contact-section h2 {
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .contact-section p {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .contact-section a {
+        .team-profile .profile-links a {
+            display: flex;
+            align-items: center;
             text-decoration: none;
-            color: #333;
-            font-size: 1.2rem;
-            display: inline-block;
-            margin: 10px;
-        }
-
-        .contact-section a img {
-            width: 40px;
-            height: 40px;
-            margin-bottom: 5px;
-        }
-
-        /* Footer Section */
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
-
-        .footer a {
             color: #007BFF;
-            text-decoration: none;
+            font-size: 1rem;
         }
 
-        .footer a:hover {
-            text-decoration: underline;
+        .team-profile .profile-links img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
         }
 
         /* Responsive Design */
@@ -387,64 +336,114 @@
                 flex-direction: column;
             }
 
-            .team-left, .team-right {
-                flex: unset;
-                width: 100%;
+            .team-profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .team-profile img {
+                margin-bottom: 15px;
+            }
+
+            .team-profile .profile-info {
+                text-align: center;
+            }
+
+            .team-profile .profile-links {
+                justify-content: center;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Team Section -->
     <div class="team-section">
-        <!-- Left Side -->
-        <div class="team-left">
-            <h2>Meet Our Team</h2>
-            <img src="team-placeholder.jpg" alt="Team Image">
-        </div>
-
-        <!-- Right Side -->
         <div class="team-right">
+            <!-- Example Team Member -->
             <div class="team-profile">
-                <img src="study.jpg" alt="Profile Image">
+                <img src="profile1.jpg" alt="Profile Image">
                 <div class="profile-info">
                     <h3>John Doe</h3>
                     <p>Team Lead</p>
+                    <div class="profile-links">
+                        <a href="https://linkedin.com" target="_blank">
+                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <img src="github-icon.png" alt="GitHub"> GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
 
+            <!-- Repeat for Other Team Members -->
             <div class="team-profile">
                 <img src="profile2.jpg" alt="Profile Image">
                 <div class="profile-info">
                     <h3>Jane Smith</h3>
                     <p>UI/UX Designer</p>
+                    <div class="profile-links">
+                        <a href="https://linkedin.com" target="_blank">
+                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <img src="github-icon.png" alt="GitHub"> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-profile">
+                <img src="profile3.jpg" alt="Profile Image">
+                <div class="profile-info">
+                    <h3>Emily Johnson</h3>
+                    <p>Full Stack Developer</p>
+                    <div class="profile-links">
+                        <a href="https://linkedin.com" target="_blank">
+                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <img src="github-icon.png" alt="GitHub"> GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="team-profile">
-                <img src="study.jpg" alt="Profile Image">
+             <div class="team-profile">
+                <img src="profile3.jpg" alt="Profile Image">
                 <div class="profile-info">
-                    <h3>John Doe</h3>
-                    <p>Team Lead</p>
+                    <h3>Emily Johnson</h3>
+                    <p>Full Stack Developer</p>
+                    <div class="profile-links">
+                        <a href="https://linkedin.com" target="_blank">
+                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <img src="github-icon.png" alt="GitHub"> GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
-
-             <div class="team-profile">
-                <img src="profile2.jpg" alt="Profile Image">
+            
+                 <div class="team-profile">
+                <img src="profile3.jpg" alt="Profile Image">
                 <div class="profile-info">
-                    <h3>Jane Smith</h3>
-                    <p>UI/UX Designer</p>
-                </div>
-            </div>
-             <div class="team-profile">
-                <img src="study.jpg" alt="Profile Image">
-                <div class="profile-info">
-                    <h3>John Doe</h3>
-                    <p>Team Lead</p>
+                    <h3>Emily Johnson</h3>
+                    <p>Full Stack Developer</p>
+                    <div class="profile-links">
+                        <a href="https://linkedin.com" target="_blank">
+                            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <img src="github-icon.png" alt="GitHub"> GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</body>
+</html>
+
 
     <!-- Contact Section -->
     <div class="contact-section" id="contact-us">
