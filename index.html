@@ -94,10 +94,6 @@
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px; /* Adds space between the cards */
-            justify-content: space-between;
         }
         .section-title {
             margin: 40px 0 20px;
@@ -105,12 +101,19 @@
             text-align: center;
             color: #333;
         }
+        .events-wrapper {
+            display: flex;
+            overflow-x: auto; /* Enables horizontal scrolling */
+            gap: 20px; /* Adds space between the event cards */
+            padding-bottom: 20px; /* Space for scrollbar */
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
         .event-card {
             background-color: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: calc(33.33% - 20px); /* Makes the cards take up 1/3 of the container, minus gap */
+            width: 300px; /* Fixed width for each card */
             margin: 10px 0;
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -157,63 +160,66 @@
 <body>
     <div class="container">
         <h2 class="section-title">Upcoming Events</h2>
-        <div class="event-card" data-aos="fade-up">
-            <img src="event1.jpeg" alt="Event Image">
-            <div class="event-content">
-                <h2 class="event-title">DevFest 2024</h2>
-                <p class="event-date">Date: January 15, 2025</p>
-                <p class="event-description">DevFest is a global event by GDG, focused on learning, networking, and innovation in technology.</p>
-                <a href="#" class="register-button">Register Now</a>
+        <div class="events-wrapper">
+            <div class="event-card" data-aos="fade-up">
+                <img src="event1.jpeg" alt="Event Image">
+                <div class="event-content">
+                    <h2 class="event-title">DevFest 2024</h2>
+                    <p class="event-date">Date: January 15, 2025</p>
+                    <p class="event-description">DevFest is a global event by GDG, focused on learning, networking, and innovation in technology.</p>
+                    <a href="#" class="register-button">Register Now</a>
+                </div>
             </div>
-        </div>
 
-        <div class="event-card" data-aos="fade-up" data-aos-delay="200">
-            <img src="winter.jpeg" alt="Event Image">
-            <div class="event-content">
-                <h2 class="event-title">Tech Winter Break2</h2>
-                <p class="event-date">Date: February 10, 2025</p>
-                <p class="event-description">The "Tech Winter Break" is a series of events organized by various Google Developer Groups (GDGs) to engage developers during the winter season.</p>
-                <a href="#" class="register-button">Register Now</a>
+            <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="winter.jpeg" alt="Event Image">
+                <div class="event-content">
+                    <h2 class="event-title">Tech Winter Break2</h2>
+                    <p class="event-date">Date: February 10, 2025</p>
+                    <p class="event-description">The "Tech Winter Break" is a series of events organized by various Google Developer Groups (GDGs) to engage developers during the winter season.</p>
+                    <a href="#" class="register-button">Register Now</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container">
         <h2 class="section-title">Past Events</h2>
-        <div class="event-card" data-aos="fade-up">
-            <img src="genai.jpg" alt="GenAI Study Jam">
-            <div class="event-content">
-                <h2 class="event-title">GenAI Study Jams</h2>
-                <p class="event-date">October 11, 2024 - November 11, 2024</p>
-                <p class="event-description">Focus on introducing new concepts in AI and GenAI.</p>
-                <a href="#" class="register-button">View More</a>
-                <a href="#" class="register-button">Feedback</a>
+        <div class="events-wrapper">
+            <div class="event-card" data-aos="fade-up">
+                <img src="genai.jpg" alt="GenAI Study Jam">
+                <div class="event-content">
+                    <h2 class="event-title">GenAI Study Jams</h2>
+                    <p class="event-date">October 11, 2024 - November 11, 2024</p>
+                    <p class="event-description">Focus on introducing new concepts in AI and GenAI.</p>
+                    <a href="#" class="register-button">View More</a>
+                    <a href="#" class="register-button">Feedback</a>
+                </div>
             </div>
-        </div>
 
-        <div class="event-card" data-aos="fade-up" data-aos-delay="200">
-            <img src="inaug.jpg" alt="Inauguration">
-            <div class="event-content">
-                <h2 class="event-title">Inauguration</h2>
-                <p class="event-date">October 16, 2024</p>
-                <p class="event-description">Inaugural event of GDG at our campus.</p>
-                <a href="#" class="register-button">View More</a>
-                <a href="#" class="register-button">Feedback</a>
+            <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="inaug.jpg" alt="Inauguration">
+                <div class="event-content">
+                    <h2 class="event-title">Inauguration</h2>
+                    <p class="event-date">October 16, 2024</p>
+                    <p class="event-description">Inaugural event of GDG at our campus.</p>
+                    <a href="#" class="register-button">View More</a>
+                    <a href="#" class="register-button">Feedback</a>
+                </div>
             </div>
-        </div>
 
-        <div class="event-card" data-aos="fade-up" data-aos-delay="400">
-            <img src="study.jpg" alt="Intro to GenAI">
-            <div class="event-content">
-                <h2 class="event-title">Intro to GenAI</h2>
-                <p class="event-date">November 7, 2024</p>
-                <p class="event-description">The Gen AI Study Jams session by GDG on Campus.</p>
-                <a href="#" class="register-button">View More</a>
-                <a href="#" class="register-button">Feedback</a>
+            <div class="event-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="study.jpg" alt="Intro to GenAI">
+                <div class="event-content">
+                    <h2 class="event-title">Intro to GenAI</h2>
+                    <p class="event-date">November 7, 2024</p>
+                    <p class="event-description">The Gen AI Study Jams session by GDG on Campus.</p>
+                    <a href="#" class="register-button">View More</a>
+                    <a href="#" class="register-button">Feedback</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
@@ -224,6 +230,7 @@
     </script>
 </body>
 </html>
+
 
 
 
