@@ -1625,62 +1625,7 @@ header {
     cursor: pointer;
 }
     
-    
-    /* Contact Section */
-#contact-us {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-    color: #333;
-}
-
-.contact-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact-content {
-    flex: 1;
-    min-width: 300px; /* Ensures content is responsive */
-    margin: 0 20px;
-}
-
-.contact-content h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.contact-content p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-.contact-links a {
-    display: inline-block;
-    margin: 5px 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-}
-
-.contact-links img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
-.side-image {
-    width: 150px; /* Adjust as needed */
-    height: auto;
-    object-fit: cover;
-    margin: 10px;
-}
-
-    
+       
 }
 
 License Terms
