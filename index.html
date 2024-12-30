@@ -73,171 +73,75 @@
 
   
 
-<!DOCTYPE html> 
-<html lang="en">
-<head>
-    <title>Event Page with Animations</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        .section-title {
-            margin: 40px 0 20px;
-            font-size: 2em;
-            text-align: center;
-            color: #333;
-        }
-        .events-wrapper {
-            display: flex;
-            flex-wrap: nowrap; /* Ensure cards stay on one line */
-            overflow-x: auto; /* Enables horizontal scrolling */
-            gap: 20px; /* Adds space between the event cards */
-            padding-bottom: 20px; /* Space for scrollbar */
-            scroll-behavior: smooth; /* Smooth scrolling */
-            padding-left: 20px; /* Some space on the left for better alignment */
-        }
-        .event-card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 300px; /* Fixed width for each card */
-            margin: 10px 0;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .event-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .event-card img {
-            width: 100%;
-            height: auto;
-        }
-        .event-content {
-            padding: 20px;
-        }
-        .event-title {
-            font-size: 1.5em;
-            margin: 0 0 10px;
-        }
-        .event-description {
-            color: #666;
-            line-height: 1.6;
-        }
-        .event-date {
-            margin: 10px 0;
-            font-weight: bold;
-            color: #444;
-        }
-        .register-button {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-        .register-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Upcoming Events Section -->
-        <h2 class="section-title">Upcoming Events</h2>
-        <div class="events-wrapper">
-            <div class="event-card" data-aos="fade-up">
-                <img src="event1.jpeg" alt="Event Image">
-                <div class="event-content">
-                    <h2 class="event-title">DevFest 2024</h2>
-                    <p class="event-date">Date: January 15, 2025</p>
-                    <p class="event-description">DevFest is a global event by GDG, focused on learning, networking, and innovation in technology.</p>
-                    <a href="#" class="register-button">Register Now</a>
-                </div>
-            </div>
-
-            <div class="event-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="winter.jpeg" alt="Event Image">
-                <div class="event-content">
-                    <h2 class="event-title">Tech Winter Break2</h2>
-                    <p class="event-date">Date: February 10, 2025</p>
-                    <p class="event-description">The "Tech Winter Break" is a series of events organized by various Google Developer Groups (GDGs) to engage developers during the winter season.</p>
-                    <a href="#" class="register-button">Register Now</a>
-                </div>
-            </div>
-        </div>
+<!-- Events Section -->
+    <section id="events" class="py-5">
+<section id="upcoming-events">
+  <h2>Upcoming Events</h2>
+  <div class="event-cards">
+    
+    <!-- Event Card -->
+    <div class="event-card">
+      <img id="img" src="event1.jpeg" alt="DevFest 2024">
+      <div class="event-info">
+        <p>DevFest is a global event by GDG, focused on learning, networking, and innovation in technology.</p>
+        <button>Learn More</button><br><br>
+      </div>
     </div>
 
-    <div class="container">
-        <!-- Past Events Section -->
-        <h2 class="section-title">Past Events</h2>
-        <div class="events-wrapper">
-            <div class="event-card" data-aos="fade-up">
-                <img src="genai.jpg" alt="GenAI Study Jam">
-                <div class="event-content">
-                    <h2 class="event-title">GenAI Study Jams</h2>
-                    <p class="event-date">October 11, 2024 - November 11, 2024</p>
-                    <p class="event-description">Focus on introducing new concepts in AI and GenAI.</p>
-                    <a href="#" class="register-button">View More</a>
-                    <a href="#" class="register-button">Feedback</a>
-                </div>
-            </div>
-
-            <div class="event-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="inaug.jpg" alt="Inauguration">
-                <div class="event-content">
-                    <h2 class="event-title">Inauguration</h2>
-                    <p class="event-date">October 16, 2024</p>
-                    <p class="event-description">Inaugural event of GDG at our campus.</p>
-                    <a href="#" class="register-button">View More</a>
-                    <a href="#" class="register-button">Feedback</a>
-                </div>
-            </div>
-
-            <div class="event-card" data-aos="fade-up" data-aos-delay="400">
-                <img src="study.jpg" alt="Intro to GenAI">
-                <div class="event-content">
-                    <h2 class="event-title">Intro to GenAI</h2>
-                    <p class="event-date">November 7, 2024</p>
-                    <p class="event-description">The Gen AI Study Jams session by GDG on Campus.</p>
-                    <a href="#" class="register-button">View More</a>
-                    <a href="#" class="register-button">Feedback</a>
-                </div>
-            </div>
-        </div>
+      
+    <div class="event-card">
+      <img id="img" src="winter.jpeg" alt="DevFest 2024">
+      <div class="event-info">
+        <p>The "Tech Winter Break" is a series of events organized by various Google Developer Groups (GDGs) to engage developers during the winter season..</p>
+        <button>Learn More</button><br><br>
+      </div>
+    </div>
+      
+  </div>
+</section>
+        <section id="past-events">
+  <h2>Past Events</h2>
+  <div class="event-cards">
+    
+    <!-- Event Card 1 -->
+    <div class="event-card">
+      <img src="study.jpg" alt="Event 1">
+      <div class="event-info">
+        <h3>GenAI Study Jams</h3>
+        <p> focus on introducing new concepts in AI and GenAI.</p>
+        <p><strong>2024-10-11 to 2024-11-11</strong></p>
+        <button>View More</button><br><br>
+        <button class="feedback">Feedback</button>
+      </div>
+    </div>
+    
+    <!-- Event Card 2 -->
+    <div class="event-card">
+      <img src="inaug.jpg" alt="Event 2">
+      <div class="event-info">
+        <h3>Inauguration</h3>
+        <p>Inaugural event of GDG at our campus.</p>
+        <p><strong>2024-10-16</strong></p>
+        <button>View More</button><br><br>
+        <button >Feedback</button>
+      </div>
+    </div>
+    
+    <!-- Event Card 3 -->
+    <div class="event-card">
+      <img src="genai.jpg" alt="Event 3">
+      <div class="event-info">
+        <h3>Intro to GenAI</h3>
+        <p>The Gen AI Study Jams session by GDG On Campus.</p>
+        <p><strong>2024-11-07</strong></p>
+        <button>View More</button><br><br>
+        <button class="feedback">Feedback</button>
+      </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000, // Animation duration in milliseconds
-            offset: 100, // Offset from the original trigger point
-        });
-    </script>
-</body>
-</html>
+  </div>
+</section>
+    </section>
 
 
 
